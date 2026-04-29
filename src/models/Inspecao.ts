@@ -1,4 +1,4 @@
-import { ChecklistItem } from "./Checklist";
+import { Checklist } from "./Checklist";
 
 export interface Inspecao {
   id?: number;
@@ -6,5 +6,5 @@ export interface Inspecao {
   data_inspecao: string;   // ISO 8601: YYYY-MM-DD
   responsavel: string;
   observacoes?: string;
-  checklist: ChecklistItem[];
+  checklist: Checklist[];
 }

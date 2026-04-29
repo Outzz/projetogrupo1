@@ -92,7 +92,6 @@ export class InspecaoRepository {
     return montarInspecao(row, checklistRows.map(rowToChecklist));
   }
 
-  // Histórico completo de inspeções de um extintor
   listarPorExtintorId(extintor_id: number): Inspecao[] {
     const rows = db
       .prepare("SELECT * FROM inspecoes WHERE extintor_id = ? ORDER BY data_inspecao DESC")
